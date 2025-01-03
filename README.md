@@ -21,7 +21,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://ssocials.netlify.app/)
 
 ## My process
 
