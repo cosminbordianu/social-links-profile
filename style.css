@@ -1,0 +1,128 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+  --font-inter-bold-font: "Inter-Bold", "sans-serif";
+  --font-inter-variable: "Inter-Variable", "sans-serif";
+  --font-inter-semibold: "Inter-SemiBold", "sans-serif";
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(./assets/fonts/static/Inter-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Variable";
+  src: url(./assets/fonts/Inter-VariableFont_slnt/wght.ttf) format("truetype");
+}
+
+html {
+  font-size: 62.5%; /* default font size is 10px */
+}
+
+img {
+  margin-top: 1.2rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+/* Layout */
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  font-family: var(--font-inter-variable);
+  background-color: var(--gray-900);
+  display: grid;
+  grid: 1fr min-content/1fr;
+  place-items: center;
+  padding: 2rem;
+}
+
+.wrapper,
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  background-color: var(--gray-800);
+  width: 34rem;
+  height: min-content;
+  padding: 3.1rem;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+/* Styling */
+
+.wrapper > *:not(:last-child):not(:nth-child(2)) {
+  /* Select all elements inside wrapper without second and last child */
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: var(--font-inter-semibold);
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.profile-details {
+  color: var(--green);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.profile-description {
+  color: var(--white);
+  font-weight: 200;
+}
+
+.social-links {
+  width: 100%;
+  gap: 1.2rem;
+}
+
+.social-links a {
+  background-color: var(--gray-700);
+  color: var(--white);
+  text-align: center;
+  padding: 1.1rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.social-links a:is(:hover, :focus-within) {
+  background-color: var(--green);
+  color: black;
+}
+
+a {
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--green);
+}
+
+.attribution a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.attribution a:is(:hover, :focus-within) {
+  color: var(--white);
+}
